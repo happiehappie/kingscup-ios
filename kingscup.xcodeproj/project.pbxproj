@@ -7,14 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		99176B212000B30D003F5C4D /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99176B202000B30D003F5C4D /* R.generated.swift */; };
 		99A137B21FFE41F400C1058B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A137B11FFE41F400C1058B /* AppDelegate.swift */; };
 		99A137B41FFE41F400C1058B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A137B31FFE41F400C1058B /* ViewController.swift */; };
 		99A137B71FFE41F400C1058B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99A137B51FFE41F400C1058B /* Main.storyboard */; };
 		99A137B91FFE41F400C1058B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99A137B81FFE41F400C1058B /* Assets.xcassets */; };
 		99A137BC1FFE41F400C1058B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99A137BA1FFE41F400C1058B /* LaunchScreen.storyboard */; };
+		B4F80E814ECB35A78D787DA1 /* Pods_kingscup.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D28B83A3A6D81B5147F30185 /* Pods_kingscup.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3EF171745869240A9429245C /* Pods-kingscup.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kingscup.debug.xcconfig"; path = "Pods/Target Support Files/Pods-kingscup/Pods-kingscup.debug.xcconfig"; sourceTree = "<group>"; };
+		430B7206ECAC650CDCF84235 /* Pods-kingscup.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kingscup.release.xcconfig"; path = "Pods/Target Support Files/Pods-kingscup/Pods-kingscup.release.xcconfig"; sourceTree = "<group>"; };
+		99176B202000B30D003F5C4D /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
 		99A137AE1FFE41F400C1058B /* kingscup.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kingscup.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		99A137B11FFE41F400C1058B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		99A137B31FFE41F400C1058B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +27,7 @@
 		99A137B81FFE41F400C1058B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		99A137BB1FFE41F400C1058B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		99A137BD1FFE41F400C1058B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D28B83A3A6D81B5147F30185 /* Pods_kingscup.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kingscup.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4F80E814ECB35A78D787DA1 /* Pods_kingscup.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		75AC3FCBBF7C5215EB7E7A4E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D28B83A3A6D81B5147F30185 /* Pods_kingscup.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		99A137A51FFE41F400C1058B = {
 			isa = PBXGroup;
 			children = (
 				99A137B01FFE41F400C1058B /* kingscup */,
 				99A137AF1FFE41F400C1058B /* Products */,
+				F47888F570DC125A26A98AF3 /* Pods */,
+				75AC3FCBBF7C5215EB7E7A4E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,9 +76,19 @@
 				99A137B51FFE41F400C1058B /* Main.storyboard */,
 				99A137B81FFE41F400C1058B /* Assets.xcassets */,
 				99A137BA1FFE41F400C1058B /* LaunchScreen.storyboard */,
+				99176B202000B30D003F5C4D /* R.generated.swift */,
 				99A137BD1FFE41F400C1058B /* Info.plist */,
 			);
 			path = kingscup;
+			sourceTree = "<group>";
+		};
+		F47888F570DC125A26A98AF3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3EF171745869240A9429245C /* Pods-kingscup.debug.xcconfig */,
+				430B7206ECAC650CDCF84235 /* Pods-kingscup.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +98,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 99A137C01FFE41F400C1058B /* Build configuration list for PBXNativeTarget "kingscup" */;
 			buildPhases = (
+				EFC1299DA2F8F4840D5E4637 /* [CP] Check Pods Manifest.lock */,
+				99176B1F2000B26F003F5C4D /* ShellScript */,
 				99A137AA1FFE41F400C1058B /* Sources */,
 				99A137AB1FFE41F400C1058B /* Frameworks */,
 				99A137AC1FFE41F400C1058B /* Resources */,
+				D55703C4AB474546A5245707 /* [CP] Embed Pods Frameworks */,
+				B98F2F36690B2E49DB2CE58F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,6 +162,73 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		99176B1F2000B26F003F5C4D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT\"";
+		};
+		B98F2F36690B2E49DB2CE58F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-kingscup/Pods-kingscup-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D55703C4AB474546A5245707 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-kingscup/Pods-kingscup-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/R.swift.Library/Rswift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Rswift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-kingscup/Pods-kingscup-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EFC1299DA2F8F4840D5E4637 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-kingscup-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		99A137AA1FFE41F400C1058B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -138,6 +236,7 @@
 			files = (
 				99A137B41FFE41F400C1058B /* ViewController.swift in Sources */,
 				99A137B21FFE41F400C1058B /* AppDelegate.swift in Sources */,
+				99176B212000B30D003F5C4D /* R.generated.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,31 +371,35 @@
 		};
 		99A137C11FFE41F400C1058B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3EF171745869240A9429245C /* Pods-kingscup.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C5DH47KNGM;
 				INFOPLIST_FILE = kingscup/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = jxlim.kingscup;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jxlim.kingscup;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		99A137C21FFE41F400C1058B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 430B7206ECAC650CDCF84235 /* Pods-kingscup.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C5DH47KNGM;
 				INFOPLIST_FILE = kingscup/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = jxlim.kingscup;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jxlim.kingscup;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
