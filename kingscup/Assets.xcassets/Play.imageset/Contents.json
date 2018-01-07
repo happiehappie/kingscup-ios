@@ -2,17 +2,17 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "kingscup_header-2.png",
+      "filename" : "iconmonstr-media-control-48-16.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "kingscup_header-1.png",
+      "filename" : "iconmonstr-media-control-48-32.png",
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
-      "filename" : "kingscup_header.png",
+      "filename" : "iconmonstr-media-control-48-49.png",
       "scale" : "3x"
     }
   ],
