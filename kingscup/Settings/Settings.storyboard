@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="J5t-3h-dmf">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Settings View Controller-->
+        <scene sceneID="w1q-Ys-3gR">
+            <objects>
+                <viewController id="J5t-3h-dmf" customClass="SettingsViewController" customModule="kingscup" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TKc-A3-Oi8">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="gAk-09-dyJ">
+                                <rect key="frame" x="0.0" y="121" width="320" height="447"/>
+                                <color key="backgroundColor" red="0.16078431372549018" green="0.19215686274509802" blue="0.29803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="J5t-3h-dmf" id="NfU-FJ-9PC"/>
+                                    <outlet property="delegate" destination="J5t-3h-dmf" id="MOI-qz-Vnq"/>
+                                </connections>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SETTINGS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s7f-0B-a3d">
+                                <rect key="frame" x="101.5" y="28" width="117" height="29"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ENGLISH" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PNp-Kj-OUo">
+                                <rect key="frame" x="108" y="523" width="103" height="29"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.40392156862745099" green="0.67843137254901964" blue="0.35686274509803922" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="gAk-09-dyJ" firstAttribute="top" secondItem="s7f-0B-a3d" secondAttribute="bottom" constant="64" id="5je-yb-RFM"/>
+                            <constraint firstItem="yg7-lZ-EWJ" firstAttribute="bottom" secondItem="gAk-09-dyJ" secondAttribute="bottom" id="7gR-CJ-zhF"/>
+                            <constraint firstItem="s7f-0B-a3d" firstAttribute="centerX" secondItem="yg7-lZ-EWJ" secondAttribute="centerX" id="Mlk-1R-SE6"/>
+                            <constraint firstItem="PNp-Kj-OUo" firstAttribute="centerX" secondItem="yg7-lZ-EWJ" secondAttribute="centerX" id="T5U-wf-ja7"/>
+                            <constraint firstItem="gAk-09-dyJ" firstAttribute="leading" secondItem="yg7-lZ-EWJ" secondAttribute="leading" id="eMF-fA-yE9"/>
+                            <constraint firstItem="s7f-0B-a3d" firstAttribute="top" secondItem="yg7-lZ-EWJ" secondAttribute="top" constant="8" id="jbq-pN-ndZ"/>
+                            <constraint firstItem="yg7-lZ-EWJ" firstAttribute="bottom" secondItem="PNp-Kj-OUo" secondAttribute="bottom" constant="16" id="oXa-Hp-gGp"/>
+                            <constraint firstItem="yg7-lZ-EWJ" firstAttribute="trailing" secondItem="gAk-09-dyJ" secondAttribute="trailing" id="x3G-T6-7M8"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="yg7-lZ-EWJ"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="gAk-09-dyJ" id="NSW-gx-mwq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nhT-cZ-DFo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="278" y="-104"/>
+        </scene>
+    </scenes>
+</document>

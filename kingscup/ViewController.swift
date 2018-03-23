@@ -21,9 +21,17 @@ class ViewController: UIViewController {
     }
     
     func setupView() {
+        
+        self.navigationItem.title = ""
+        
         self.heartButton.layer.cornerRadius = self.heartButton.bounds.width / 2
         self.playButton.layer.cornerRadius = self.playButton.bounds.width / 2
         self.settingsButton.layer.cornerRadius = self.settingsButton.bounds.width / 2
+        
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
+        self.navigationController?.navigationBar.shadowImage = UIImage()
+        self.navigationController?.navigationBar.isTranslucent = true
+        self.navigationController?.view.backgroundColor = UIColor.clear
     }
     
 }

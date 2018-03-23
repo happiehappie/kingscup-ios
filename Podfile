@@ -7,4 +7,5 @@ target 'kingscup' do
 
   # Pods for kingscup
   pod 'R.swift'
+  pod 'SwifterSwift'
 end

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Xxu-Op-gNi">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -20,7 +20,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="tAQ-81-f0G">
-                                <rect key="frame" x="0.0" y="123" width="320" height="214"/>
+                                <rect key="frame" x="0.0" y="145" width="320" height="214"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kmo-9N-QGW">
                                 <rect key="frame" x="0.0" y="426" width="320" height="142"/>
@@ -43,6 +43,9 @@
                                     <constraint firstAttribute="width" constant="44" id="jI1-Db-Znd"/>
                                 </constraints>
                                 <state key="normal" image="Settings"/>
+                                <connections>
+                                    <segue destination="5gJ-6Y-WbB" kind="show" id="gnc-or-1vA"/>
+                                </connections>
                             </button>
                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1xO-gK-LYq">
                                 <rect key="frame" x="54" y="404" width="44" height="44"/>
@@ -72,6 +75,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="bhM-VX-k7v"/>
                     <connections>
                         <outlet property="heartButton" destination="1xO-gK-LYq" id="HOX-4t-kYi"/>
                         <outlet property="playButton" destination="vXU-k9-Z8M" id="Q6f-9t-ElF"/>
@@ -80,7 +84,34 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="38" y="85"/>
+            <point key="canvasLocation" x="435" y="84.507042253521121"/>
+        </scene>
+        <!--Settings-->
+        <scene sceneID="MUc-yt-4Xu">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Settings" id="5gJ-6Y-WbB" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fF5-u6-kBC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1070" y="85"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="FFO-Fl-9vW">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Xxu-Op-gNi" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="DTF-Rq-Ooa">
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="09h-yb-tP1"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JAw-b6-g4f" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-343" y="85"/>
         </scene>
     </scenes>
     <resources>
