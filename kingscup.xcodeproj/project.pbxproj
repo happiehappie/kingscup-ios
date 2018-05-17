@@ -17,6 +17,8 @@
 		99A137B71FFE41F400C1058B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99A137B51FFE41F400C1058B /* Main.storyboard */; };
 		99A137B91FFE41F400C1058B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99A137B81FFE41F400C1058B /* Assets.xcassets */; };
 		99A137BC1FFE41F400C1058B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99A137BA1FFE41F400C1058B /* LaunchScreen.storyboard */; };
+		99CDBDCB20656A7B00616E3A /* QuickGuide.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99CDBDCA20656A7B00616E3A /* QuickGuide.storyboard */; };
+		99CDBDCD206572B800616E3A /* QuickGuideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99CDBDCC206572B800616E3A /* QuickGuideViewController.swift */; };
 		B4F80E814ECB35A78D787DA1 /* Pods_kingscup.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D28B83A3A6D81B5147F30185 /* Pods_kingscup.framework */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +37,8 @@
 		99A137B81FFE41F400C1058B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		99A137BB1FFE41F400C1058B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		99A137BD1FFE41F400C1058B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		99CDBDCA20656A7B00616E3A /* QuickGuide.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = QuickGuide.storyboard; sourceTree = "<group>"; };
+		99CDBDCC206572B800616E3A /* QuickGuideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickGuideViewController.swift; sourceTree = "<group>"; };
 		D28B83A3A6D81B5147F30185 /* Pods_kingscup.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kingscup.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -101,6 +105,7 @@
 				99A137B11FFE41F400C1058B /* AppDelegate.swift */,
 				99A137B31FFE41F400C1058B /* ViewController.swift */,
 				99A137B51FFE41F400C1058B /* Main.storyboard */,
+				99CDBDC920656A2900616E3A /* QuickGuide */,
 				99176B222002126A003F5C4D /* Settings */,
 				99A137B81FFE41F400C1058B /* Assets.xcassets */,
 				99A137BA1FFE41F400C1058B /* LaunchScreen.storyboard */,
@@ -108,6 +113,15 @@
 				99A137BD1FFE41F400C1058B /* Info.plist */,
 			);
 			path = kingscup;
+			sourceTree = "<group>";
+		};
+		99CDBDC920656A2900616E3A /* QuickGuide */ = {
+			isa = PBXGroup;
+			children = (
+				99CDBDCA20656A7B00616E3A /* QuickGuide.storyboard */,
+				99CDBDCC206572B800616E3A /* QuickGuideViewController.swift */,
+			);
+			path = QuickGuide;
 			sourceTree = "<group>";
 		};
 		F47888F570DC125A26A98AF3 /* Pods */ = {
@@ -132,7 +146,6 @@
 				99A137AB1FFE41F400C1058B /* Frameworks */,
 				99A137AC1FFE41F400C1058B /* Resources */,
 				D55703C4AB474546A5245707 /* [CP] Embed Pods Frameworks */,
-				B98F2F36690B2E49DB2CE58F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -183,6 +196,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				99A137BC1FFE41F400C1058B /* LaunchScreen.storyboard in Resources */,
+				99CDBDCB20656A7B00616E3A /* QuickGuide.storyboard in Resources */,
 				99A137B91FFE41F400C1058B /* Assets.xcassets in Resources */,
 				99A137B71FFE41F400C1058B /* Main.storyboard in Resources */,
 				99176B2B200217B3003F5C4D /* SettingsTableViewCell.xib in Resources */,
@@ -206,21 +220,6 @@
 			shellPath = /bin/sh;
 			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT\"";
 		};
-		B98F2F36690B2E49DB2CE58F /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-kingscup/Pods-kingscup-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		D55703C4AB474546A5245707 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -228,11 +227,13 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-kingscup/Pods-kingscup-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Localize-Swift/Localize_Swift.framework",
 				"${BUILT_PRODUCTS_DIR}/R.swift.Library/Rswift.framework",
 				"${BUILT_PRODUCTS_DIR}/SwifterSwift/SwifterSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Localize_Swift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Rswift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwifterSwift.framework",
 			);
@@ -271,6 +272,7 @@
 				99176B212000B30D003F5C4D /* R.generated.swift in Sources */,
 				99176B2A200217B3003F5C4D /* SettingsTableViewCell.swift in Sources */,
 				99176B2620021604003F5C4D /* SettingsViewController.swift in Sources */,
+				99CDBDCD206572B800616E3A /* QuickGuideViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,7 +346,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -395,7 +397,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";

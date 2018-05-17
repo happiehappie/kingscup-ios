@@ -1,32 +1,42 @@
 PODS:
+  - Localize-Swift (2.0.0)
   - R.swift (4.0.0):
     - R.swift.Library (~> 4.0.0)
   - R.swift.Library (4.0.0)
-  - SwifterSwift (4.2.0):
-    - SwifterSwift/AppKit (= 4.2.0)
-    - SwifterSwift/CoreGraphics (= 4.2.0)
-    - SwifterSwift/CoreLocation (= 4.2.0)
-    - SwifterSwift/Foundation (= 4.2.0)
-    - SwifterSwift/MapKit (= 4.2.0)
-    - SwifterSwift/SwiftStdlib (= 4.2.0)
-    - SwifterSwift/UIKit (= 4.2.0)
-  - SwifterSwift/AppKit (4.2.0)
-  - SwifterSwift/CoreGraphics (4.2.0)
-  - SwifterSwift/CoreLocation (4.2.0)
-  - SwifterSwift/Foundation (4.2.0)
-  - SwifterSwift/MapKit (4.2.0)
-  - SwifterSwift/SwiftStdlib (4.2.0)
-  - SwifterSwift/UIKit (4.2.0)
+  - SwifterSwift (4.3.0):
+    - SwifterSwift/AppKit (= 4.3.0)
+    - SwifterSwift/CoreGraphics (= 4.3.0)
+    - SwifterSwift/CoreLocation (= 4.3.0)
+    - SwifterSwift/Foundation (= 4.3.0)
+    - SwifterSwift/MapKit (= 4.3.0)
+    - SwifterSwift/SwiftStdlib (= 4.3.0)
+    - SwifterSwift/UIKit (= 4.3.0)
+  - SwifterSwift/AppKit (4.3.0)
+  - SwifterSwift/CoreGraphics (4.3.0)
+  - SwifterSwift/CoreLocation (4.3.0)
+  - SwifterSwift/Foundation (4.3.0)
+  - SwifterSwift/MapKit (4.3.0)
+  - SwifterSwift/SwiftStdlib (4.3.0)
+  - SwifterSwift/UIKit (4.3.0)
 
 DEPENDENCIES:
+  - Localize-Swift (~> 2.0)
   - R.swift
   - SwifterSwift
 
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - Localize-Swift
+    - R.swift
+    - R.swift.Library
+    - SwifterSwift
+
 SPEC CHECKSUMS:
+  Localize-Swift: c798ec9286494866f7068f85f7c71283ac5bdab4
   R.swift: d6a5ec2f55a8441dc0ed9f1f8b37d7d11ae85c66
   R.swift.Library: c3af34921024333546e23b70e70d0b4e0cffca75
-  SwifterSwift: 1d101dcfb0c3123226900f3b4d220d57fb60d546
+  SwifterSwift: f3fce2b9fc5b9d8fda6eec33825e5243c60aebba
 
-PODFILE CHECKSUM: 370f7bde64ee99659fd38759eaf61b045bad8da5
+PODFILE CHECKSUM: a2de192cbd7b64f8b9fa799ca0164ca62751ff73
 
-COCOAPODS: 1.4.0
+COCOAPODS: 1.5.0

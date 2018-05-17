@@ -8,4 +8,5 @@ target 'kingscup' do
   # Pods for kingscup
   pod 'R.swift'
   pod 'SwifterSwift'
+  pod 'Localize-Swift', '~> 2.0'
 end

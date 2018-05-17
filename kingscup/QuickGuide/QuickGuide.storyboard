@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7Vh-9l-VyX">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Quick Guide View Controller-->
+        <scene sceneID="gWX-gL-3bN">
+            <objects>
+                <viewController id="7Vh-9l-VyX" customClass="QuickGuideViewController" customModule="kingscup" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gQl-aN-qgz">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="QUICK GUIDE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DRf-QP-4d6">
+                                <rect key="frame" x="82.5" y="28" width="155" height="29"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ta0-rQ-nzn">
+                                <rect key="frame" x="0.0" y="157" width="320" height="411"/>
+                                <subviews>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dXW-fX-dun">
+                                        <rect key="frame" x="16" y="64" width="288" height="246"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="y5E-UJ-2ge">
+                                                <rect key="frame" x="0.0" y="0.0" width="864" height="246"/>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="y5E-UJ-2ge" firstAttribute="width" secondItem="dXW-fX-dun" secondAttribute="width" multiplier="3" id="F58-F2-o9W"/>
+                                            <constraint firstItem="y5E-UJ-2ge" firstAttribute="height" secondItem="dXW-fX-dun" secondAttribute="height" id="GBO-bA-K8S"/>
+                                            <constraint firstAttribute="bottom" secondItem="y5E-UJ-2ge" secondAttribute="bottom" id="Se8-zv-fUH"/>
+                                            <constraint firstAttribute="trailing" secondItem="y5E-UJ-2ge" secondAttribute="trailing" id="YHo-JA-Cfm"/>
+                                            <constraint firstItem="y5E-UJ-2ge" firstAttribute="leading" secondItem="dXW-fX-dun" secondAttribute="leading" id="mT3-sQ-mq3"/>
+                                            <constraint firstItem="y5E-UJ-2ge" firstAttribute="top" secondItem="dXW-fX-dun" secondAttribute="top" id="rfC-fq-scy"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="delegate" destination="7Vh-9l-VyX" id="uZ2-lZ-zIz"/>
+                                        </connections>
+                                    </scrollView>
+                                    <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="qb7-iL-PkX">
+                                        <rect key="frame" x="140.5" y="342" width="39" height="37"/>
+                                    </pageControl>
+                                </subviews>
+                                <color key="backgroundColor" red="0.16078431372549018" green="0.19215686274509802" blue="0.29803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="dXW-fX-dun" firstAttribute="top" secondItem="ta0-rQ-nzn" secondAttribute="top" constant="64" id="NyX-HK-SXu"/>
+                                    <constraint firstAttribute="trailing" secondItem="dXW-fX-dun" secondAttribute="trailing" constant="16" id="Qod-FN-xEg"/>
+                                    <constraint firstItem="dXW-fX-dun" firstAttribute="leading" secondItem="ta0-rQ-nzn" secondAttribute="leading" constant="16" id="X2D-HQ-kWf"/>
+                                    <constraint firstAttribute="bottom" secondItem="qb7-iL-PkX" secondAttribute="bottom" constant="32" id="dqO-jq-Fgz"/>
+                                    <constraint firstItem="qb7-iL-PkX" firstAttribute="top" secondItem="dXW-fX-dun" secondAttribute="bottom" constant="32" id="noB-tO-vrH"/>
+                                    <constraint firstItem="qb7-iL-PkX" firstAttribute="centerX" secondItem="ta0-rQ-nzn" secondAttribute="centerX" id="ti7-Zt-uIy"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.83529411764705885" green="0.29019607843137252" blue="0.45490196078431372" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="DRf-QP-4d6" firstAttribute="centerX" secondItem="YFF-EX-FYp" secondAttribute="centerX" id="0mg-rG-2Vw"/>
+                            <constraint firstItem="DRf-QP-4d6" firstAttribute="top" secondItem="YFF-EX-FYp" secondAttribute="top" constant="8" id="IAN-VQ-4le"/>
+                            <constraint firstItem="ta0-rQ-nzn" firstAttribute="leading" secondItem="YFF-EX-FYp" secondAttribute="leading" id="K9m-mS-dcF"/>
+                            <constraint firstItem="YFF-EX-FYp" firstAttribute="bottom" secondItem="ta0-rQ-nzn" secondAttribute="bottom" id="Sai-iI-hoa"/>
+                            <constraint firstItem="ta0-rQ-nzn" firstAttribute="top" secondItem="DRf-QP-4d6" secondAttribute="bottom" constant="100" id="eFw-Jh-fcV"/>
+                            <constraint firstItem="YFF-EX-FYp" firstAttribute="trailing" secondItem="ta0-rQ-nzn" secondAttribute="trailing" id="itt-yT-Pq8"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="YFF-EX-FYp"/>
+                    </view>
+                    <connections>
+                        <outlet property="onboardingContainerView" destination="ta0-rQ-nzn" id="B2N-Sr-IZa"/>
+                        <outlet property="pageControl" destination="qb7-iL-PkX" id="j7v-hH-Cfi"/>
+                        <outlet property="quickGuideStackView" destination="y5E-UJ-2ge" id="onh-TH-nO1"/>
+                        <outlet property="scrollView" destination="dXW-fX-dun" id="GRD-3X-V8i"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ydD-Vm-13A" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-202" y="206"/>
+        </scene>
+    </scenes>
+</document>

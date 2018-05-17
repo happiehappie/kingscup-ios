@@ -55,11 +55,20 @@
                     </view>
                     <connections>
                         <outlet property="tableView" destination="gAk-09-dyJ" id="NSW-gx-mwq"/>
+                        <segue destination="MNX-Eo-wUf" kind="show" identifier="quickGuideSegue" id="BMO-Vr-3ar"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nhT-cZ-DFo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="278" y="-104"/>
+        </scene>
+        <!--QuickGuide-->
+        <scene sceneID="M7X-N9-RnW">
+            <objects>
+                <viewControllerPlaceholder storyboardName="QuickGuide" id="MNX-Eo-wUf" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dMz-5l-V7E" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="902" y="-105"/>
         </scene>
     </scenes>
 </document>

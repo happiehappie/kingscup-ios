@@ -51,4 +51,13 @@ extension SettingsViewController: UITableViewDelegate, UITableViewDataSource {
         return 44
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        switch indexPath.row {
+        case 0:
+            self.performSegue(withIdentifier: R.segue.settingsViewController.quickGuideSegue, sender: self)
+        default:
+            return
+        }
+    }
+    
 }
