@@ -28,11 +28,11 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ta0-rQ-nzn">
                                 <rect key="frame" x="0.0" y="157" width="320" height="411"/>
                                 <subviews>
-                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dXW-fX-dun">
-                                        <rect key="frame" x="16" y="64" width="288" height="246"/>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dXW-fX-dun">
+                                        <rect key="frame" x="16" y="64" width="288" height="262"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="y5E-UJ-2ge">
-                                                <rect key="frame" x="0.0" y="0.0" width="864" height="246"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="864" height="262"/>
                                             </stackView>
                                         </subviews>
                                         <constraints>
@@ -47,7 +47,7 @@
                                             <outlet property="delegate" destination="7Vh-9l-VyX" id="uZ2-lZ-zIz"/>
                                         </connections>
                                     </scrollView>
-                                    <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="qb7-iL-PkX">
+                                    <pageControl opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="500" verticalCompressionResistancePriority="500" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="qb7-iL-PkX">
                                         <rect key="frame" x="140.5" y="342" width="39" height="37"/>
                                     </pageControl>
                                 </subviews>
@@ -57,7 +57,7 @@
                                     <constraint firstAttribute="trailing" secondItem="dXW-fX-dun" secondAttribute="trailing" constant="16" id="Qod-FN-xEg"/>
                                     <constraint firstItem="dXW-fX-dun" firstAttribute="leading" secondItem="ta0-rQ-nzn" secondAttribute="leading" constant="16" id="X2D-HQ-kWf"/>
                                     <constraint firstAttribute="bottom" secondItem="qb7-iL-PkX" secondAttribute="bottom" constant="32" id="dqO-jq-Fgz"/>
-                                    <constraint firstItem="qb7-iL-PkX" firstAttribute="top" secondItem="dXW-fX-dun" secondAttribute="bottom" constant="32" id="noB-tO-vrH"/>
+                                    <constraint firstItem="qb7-iL-PkX" firstAttribute="top" secondItem="dXW-fX-dun" secondAttribute="bottom" constant="16" id="noB-tO-vrH"/>
                                     <constraint firstItem="qb7-iL-PkX" firstAttribute="centerX" secondItem="ta0-rQ-nzn" secondAttribute="centerX" id="ti7-Zt-uIy"/>
                                 </constraints>
                             </view>
