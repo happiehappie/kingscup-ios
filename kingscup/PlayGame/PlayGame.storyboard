@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="60L-cT-7rB">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Play Game View Controller-->
+        <scene sceneID="ZFJ-aA-n9X">
+            <objects>
+                <viewController id="60L-cT-7rB" customClass="PlayGameViewController" customModule="kingscup" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SkS-hC-qqI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iKx-hT-kLs">
+                                <rect key="frame" x="16" y="551" width="359" height="100"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NLI-qb-eIA">
+                                        <rect key="frame" x="79" y="-10" width="200" height="110"/>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="NLI-qb-eIA" firstAttribute="top" secondItem="iKx-hT-kLs" secondAttribute="top" id="0cM-JW-5ch"/>
+                                    <constraint firstAttribute="bottom" secondItem="NLI-qb-eIA" secondAttribute="bottom" id="HDC-mE-rw6"/>
+                                    <constraint firstItem="NLI-qb-eIA" firstAttribute="leading" secondItem="iKx-hT-kLs" secondAttribute="leading" id="Jqb-fN-1SA"/>
+                                    <constraint firstAttribute="height" constant="100" id="RIV-AS-0RY"/>
+                                    <constraint firstAttribute="trailing" secondItem="NLI-qb-eIA" secondAttribute="trailing" id="SM8-bG-ppH"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="iKx-hT-kLs" firstAttribute="leading" secondItem="HZ3-QW-Jc1" secondAttribute="leading" constant="16" id="Q5c-s7-vea"/>
+                            <constraint firstItem="HZ3-QW-Jc1" firstAttribute="trailing" secondItem="iKx-hT-kLs" secondAttribute="trailing" id="hnx-nk-nEf"/>
+                            <constraint firstItem="HZ3-QW-Jc1" firstAttribute="bottom" secondItem="iKx-hT-kLs" secondAttribute="bottom" constant="16" id="qSw-Bw-USz"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="HZ3-QW-Jc1"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VOn-oM-lGX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="28" y="142"/>
+        </scene>
+    </scenes>
+</document>

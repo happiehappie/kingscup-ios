@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Xxu-Op-gNi">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Xxu-Op-gNi">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -34,6 +34,9 @@
                                     <constraint firstAttribute="height" constant="60" id="s7T-6R-xbL"/>
                                 </constraints>
                                 <state key="normal" image="Play"/>
+                                <connections>
+                                    <segue destination="17j-q0-G6y" kind="show" id="x6M-Ir-49t"/>
+                                </connections>
                             </button>
                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="usL-sh-rOs">
                                 <rect key="frame" x="222" y="404" width="44" height="44"/>
@@ -86,13 +89,21 @@
             </objects>
             <point key="canvasLocation" x="435" y="84.507042253521121"/>
         </scene>
+        <!--PlayGame-->
+        <scene sceneID="qWm-u7-2vp">
+            <objects>
+                <viewControllerPlaceholder storyboardName="PlayGame" id="17j-q0-G6y" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Y3z-aN-QXY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1025" y="72"/>
+        </scene>
         <!--Settings-->
         <scene sceneID="MUc-yt-4Xu">
             <objects>
                 <viewControllerPlaceholder storyboardName="Settings" id="5gJ-6Y-WbB" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fF5-u6-kBC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1070" y="85"/>
+            <point key="canvasLocation" x="1032" y="266"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="FFO-Fl-9vW">
