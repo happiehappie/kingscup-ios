@@ -18,6 +18,7 @@ class SettingsViewController: UIViewController {
         // Do any additional setup after loading the view.
         self.tableView.tableFooterView = UIView()
         self.tableView.register(R.nib.settingsTableViewCell(), forCellReuseIdentifier: R.reuseIdentifier.settingsCell.identifier)
+        self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
     }
 
 }

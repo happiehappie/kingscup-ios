@@ -29,7 +29,7 @@ class PlayGameViewController: UIViewController {
                 self.cards.append(Card(rank: rank, suit: suit))
             }
         }
-        
+        self.cards = self.cards.shuffled()
     }
     
 }
