@@ -17,13 +17,13 @@
 		99A137B71FFE41F400C1058B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99A137B51FFE41F400C1058B /* Main.storyboard */; };
 		99A137B91FFE41F400C1058B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99A137B81FFE41F400C1058B /* Assets.xcassets */; };
 		99A137BC1FFE41F400C1058B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99A137BA1FFE41F400C1058B /* LaunchScreen.storyboard */; };
+		99CC41D220C9A528002140EF /* PlayingCardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99CC41D020C9A528002140EF /* PlayingCardCollectionViewCell.swift */; };
+		99CC41D320C9A528002140EF /* PlayingCardCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 99CC41D120C9A528002140EF /* PlayingCardCollectionViewCell.xib */; };
 		99CDBDCB20656A7B00616E3A /* QuickGuide.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99CDBDCA20656A7B00616E3A /* QuickGuide.storyboard */; };
 		99CDBDCD206572B800616E3A /* QuickGuideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99CDBDCC206572B800616E3A /* QuickGuideViewController.swift */; };
 		99E48BF620AF38EF00B3310A /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99E48BF520AF38EF00B3310A /* Card.swift */; };
 		99E48BF920AF3A3400B3310A /* PlayGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99E48BF820AF3A3400B3310A /* PlayGameViewController.swift */; };
 		99E48BFB20AF3A7400B3310A /* PlayGame.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99E48BFA20AF3A7400B3310A /* PlayGame.storyboard */; };
-		99E48BFD20AF3B2C00B3310A /* PlayCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99E48BFC20AF3B2C00B3310A /* PlayCardView.swift */; };
-		99E48BFF20AF3B3D00B3310A /* PlayCardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 99E48BFE20AF3B3D00B3310A /* PlayCardView.xib */; };
 		B4F80E814ECB35A78D787DA1 /* Pods_kingscup.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D28B83A3A6D81B5147F30185 /* Pods_kingscup.framework */; };
 /* End PBXBuildFile section */
 
@@ -42,13 +42,13 @@
 		99A137B81FFE41F400C1058B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		99A137BB1FFE41F400C1058B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		99A137BD1FFE41F400C1058B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		99CC41D020C9A528002140EF /* PlayingCardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayingCardCollectionViewCell.swift; sourceTree = "<group>"; };
+		99CC41D120C9A528002140EF /* PlayingCardCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlayingCardCollectionViewCell.xib; sourceTree = "<group>"; };
 		99CDBDCA20656A7B00616E3A /* QuickGuide.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = QuickGuide.storyboard; sourceTree = "<group>"; };
 		99CDBDCC206572B800616E3A /* QuickGuideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickGuideViewController.swift; sourceTree = "<group>"; };
 		99E48BF520AF38EF00B3310A /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		99E48BF820AF3A3400B3310A /* PlayGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayGameViewController.swift; sourceTree = "<group>"; };
 		99E48BFA20AF3A7400B3310A /* PlayGame.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PlayGame.storyboard; sourceTree = "<group>"; };
-		99E48BFC20AF3B2C00B3310A /* PlayCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayCardView.swift; sourceTree = "<group>"; };
-		99E48BFE20AF3B3D00B3310A /* PlayCardView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlayCardView.xib; sourceTree = "<group>"; };
 		D28B83A3A6D81B5147F30185 /* Pods_kingscup.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kingscup.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -149,8 +149,8 @@
 			children = (
 				99E48BF820AF3A3400B3310A /* PlayGameViewController.swift */,
 				99E48BFA20AF3A7400B3310A /* PlayGame.storyboard */,
-				99E48BFC20AF3B2C00B3310A /* PlayCardView.swift */,
-				99E48BFE20AF3B3D00B3310A /* PlayCardView.xib */,
+				99CC41D020C9A528002140EF /* PlayingCardCollectionViewCell.swift */,
+				99CC41D120C9A528002140EF /* PlayingCardCollectionViewCell.xib */,
 			);
 			path = PlayGame;
 			sourceTree = "<group>";
@@ -230,8 +230,8 @@
 				99CDBDCB20656A7B00616E3A /* QuickGuide.storyboard in Resources */,
 				99E48BFB20AF3A7400B3310A /* PlayGame.storyboard in Resources */,
 				99A137B91FFE41F400C1058B /* Assets.xcassets in Resources */,
-				99E48BFF20AF3B3D00B3310A /* PlayCardView.xib in Resources */,
 				99A137B71FFE41F400C1058B /* Main.storyboard in Resources */,
+				99CC41D320C9A528002140EF /* PlayingCardCollectionViewCell.xib in Resources */,
 				99176B2B200217B3003F5C4D /* SettingsTableViewCell.xib in Resources */,
 				99176B2420021280003F5C4D /* Settings.storyboard in Resources */,
 			);
@@ -305,7 +305,7 @@
 				99E48BF620AF38EF00B3310A /* Card.swift in Sources */,
 				99176B212000B30D003F5C4D /* R.generated.swift in Sources */,
 				99176B2A200217B3003F5C4D /* SettingsTableViewCell.swift in Sources */,
-				99E48BFD20AF3B2C00B3310A /* PlayCardView.swift in Sources */,
+				99CC41D220C9A528002140EF /* PlayingCardCollectionViewCell.swift in Sources */,
 				99176B2620021604003F5C4D /* SettingsViewController.swift in Sources */,
 				99E48BF920AF3A3400B3310A /* PlayGameViewController.swift in Sources */,
 				99CDBDCD206572B800616E3A /* QuickGuideViewController.swift in Sources */,

@@ -36,6 +36,9 @@ class Card: NSObject {
         case club = "♣"
     }
     
+    static let width: CGFloat = 100.0
+    static let ratio: CGFloat = 1.4
+    
     var rank: Rank!
     var suit: Suit!
     

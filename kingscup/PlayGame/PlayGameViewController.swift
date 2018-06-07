@@ -10,12 +10,14 @@ import UIKit
 
 class PlayGameViewController: UIViewController {
     
+    @IBOutlet weak var collectionView: UICollectionView!
     var cards = [Card]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         self.view.backgroundColor = UIColor.black
+        self.collectionView.register(R.nib.playingCardCollectionViewCell(), forCellWithReuseIdentifier: R.reuseIdentifier.playingCardCell.identifier)
         self.setup()
     }
     
@@ -32,4 +34,24 @@ class PlayGameViewController: UIViewController {
         self.cards = self.cards.shuffled()
     }
     
+}
+
+extension PlayGameViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return self.cards.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: R.reuseIdentifier.playingCardCell.identifier, for: indexPath) as! PlayingCardCollectionViewCell
+        
+        cell.config(with: self.cards[indexPath.item])
+        
+        return cell
+        
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: Card.width, height: Card.width * Card.ratio)
+    }
 }
