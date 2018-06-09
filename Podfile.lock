@@ -1,5 +1,8 @@
 PODS:
+  - DynamicBlurView (2.0.2)
   - Localize-Swift (2.0.0)
+  - PopupDialog (0.7.1):
+    - DynamicBlurView (~> 2.0)
   - R.swift (4.0.0):
     - R.swift.Library (~> 4.0.0)
   - R.swift.Library (4.0.0)
@@ -21,22 +24,27 @@ PODS:
 
 DEPENDENCIES:
   - Localize-Swift (~> 2.0)
+  - PopupDialog (~> 0.7)
   - R.swift
   - SwifterSwift
 
 SPEC REPOS:
-  https://github.com/CocoaPods/Specs.git:
+  https://github.com/cocoapods/specs.git:
+    - DynamicBlurView
     - Localize-Swift
+    - PopupDialog
     - R.swift
     - R.swift.Library
     - SwifterSwift
 
 SPEC CHECKSUMS:
+  DynamicBlurView: aa6db4defc6e537eb86fc5e58dd3991666178399
   Localize-Swift: c798ec9286494866f7068f85f7c71283ac5bdab4
+  PopupDialog: 39598b7d41719f5c025b4b70e62728bae7734fef
   R.swift: d6a5ec2f55a8441dc0ed9f1f8b37d7d11ae85c66
   R.swift.Library: c3af34921024333546e23b70e70d0b4e0cffca75
   SwifterSwift: f3fce2b9fc5b9d8fda6eec33825e5243c60aebba
 
-PODFILE CHECKSUM: a2de192cbd7b64f8b9fa799ca0164ca62751ff73
+PODFILE CHECKSUM: 91e4576c50de6970e680234d4b1bc661eda1e4e6
 
-COCOAPODS: 1.5.0
+COCOAPODS: 1.5.3

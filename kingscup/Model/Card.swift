@@ -34,6 +34,21 @@ class Card: NSObject {
         case spade = "♠"
         case diamond = "♦"
         case club = "♣"
+        
+        var image: UIImage {
+            switch self {
+            case .spade:
+                return R.image.spadePink()!
+            case .heart:
+                return R.image.heartPink()!
+            case .club:
+                return R.image.clubPink()!
+            case .diamond:
+                return R.image.diamondPink()!
+            
+            }
+        }
+        
     }
     
     static let width: CGFloat = 100.0

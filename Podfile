@@ -9,4 +9,5 @@ target 'kingscup' do
   pod 'R.swift'
   pod 'SwifterSwift'
   pod 'Localize-Swift', '~> 2.0'
+  pod 'PopupDialog', '~> 0.7'
 end

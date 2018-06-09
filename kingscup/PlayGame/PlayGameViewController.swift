@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import PopupDialog
 
 class PlayGameViewController: UIViewController {
     
@@ -34,6 +35,19 @@ class PlayGameViewController: UIViewController {
         self.cards = self.cards.shuffled()
     }
     
+    @IBAction func optionsButtonTapped(_ sender: UIButton) {
+        
+        let popup = PopupDialog(viewController: PauseViewController(nibName: R.nib.pauseViewController.name, bundle: nil))
+        self.present(popup, animated: true, completion: nil)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == R.segue.playGameViewController.gameCardSegue.identifier {
+            let vc = segue.destination as! PlayingCardViewController
+            vc.card = sender as! Card
+        }
+    }
+    
 }
 
 extension PlayGameViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
@@ -49,6 +63,10 @@ extension PlayGameViewController: UICollectionViewDelegate, UICollectionViewData
         
         return cell
         
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        self.performSegue(withIdentifier: R.segue.playGameViewController.gameCardSegue, sender: self.cards[indexPath.item])
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {

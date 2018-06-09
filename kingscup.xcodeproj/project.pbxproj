@@ -12,6 +12,7 @@
 		99176B2620021604003F5C4D /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99176B2520021604003F5C4D /* SettingsViewController.swift */; };
 		99176B2A200217B3003F5C4D /* SettingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99176B28200217B3003F5C4D /* SettingsTableViewCell.swift */; };
 		99176B2B200217B3003F5C4D /* SettingsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 99176B29200217B3003F5C4D /* SettingsTableViewCell.xib */; };
+		999433E420CA662000C19F04 /* PlayingCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999433E320CA662000C19F04 /* PlayingCardViewController.swift */; };
 		99A137B21FFE41F400C1058B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A137B11FFE41F400C1058B /* AppDelegate.swift */; };
 		99A137B41FFE41F400C1058B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A137B31FFE41F400C1058B /* ViewController.swift */; };
 		99A137B71FFE41F400C1058B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99A137B51FFE41F400C1058B /* Main.storyboard */; };
@@ -19,6 +20,8 @@
 		99A137BC1FFE41F400C1058B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99A137BA1FFE41F400C1058B /* LaunchScreen.storyboard */; };
 		99CC41D220C9A528002140EF /* PlayingCardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99CC41D020C9A528002140EF /* PlayingCardCollectionViewCell.swift */; };
 		99CC41D320C9A528002140EF /* PlayingCardCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 99CC41D120C9A528002140EF /* PlayingCardCollectionViewCell.xib */; };
+		99CCD79F20CC424C000DB46A /* PauseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99CCD79D20CC424C000DB46A /* PauseViewController.swift */; };
+		99CCD7A020CC424C000DB46A /* PauseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 99CCD79E20CC424C000DB46A /* PauseViewController.xib */; };
 		99CDBDCB20656A7B00616E3A /* QuickGuide.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99CDBDCA20656A7B00616E3A /* QuickGuide.storyboard */; };
 		99CDBDCD206572B800616E3A /* QuickGuideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99CDBDCC206572B800616E3A /* QuickGuideViewController.swift */; };
 		99E48BF620AF38EF00B3310A /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99E48BF520AF38EF00B3310A /* Card.swift */; };
@@ -35,6 +38,7 @@
 		99176B2520021604003F5C4D /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		99176B28200217B3003F5C4D /* SettingsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewCell.swift; sourceTree = "<group>"; };
 		99176B29200217B3003F5C4D /* SettingsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsTableViewCell.xib; sourceTree = "<group>"; };
+		999433E320CA662000C19F04 /* PlayingCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayingCardViewController.swift; sourceTree = "<group>"; };
 		99A137AE1FFE41F400C1058B /* kingscup.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kingscup.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		99A137B11FFE41F400C1058B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		99A137B31FFE41F400C1058B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -44,6 +48,8 @@
 		99A137BD1FFE41F400C1058B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		99CC41D020C9A528002140EF /* PlayingCardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayingCardCollectionViewCell.swift; sourceTree = "<group>"; };
 		99CC41D120C9A528002140EF /* PlayingCardCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlayingCardCollectionViewCell.xib; sourceTree = "<group>"; };
+		99CCD79D20CC424C000DB46A /* PauseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PauseViewController.swift; sourceTree = "<group>"; };
+		99CCD79E20CC424C000DB46A /* PauseViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PauseViewController.xib; sourceTree = "<group>"; };
 		99CDBDCA20656A7B00616E3A /* QuickGuide.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = QuickGuide.storyboard; sourceTree = "<group>"; };
 		99CDBDCC206572B800616E3A /* QuickGuideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickGuideViewController.swift; sourceTree = "<group>"; };
 		99E48BF520AF38EF00B3310A /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
@@ -127,6 +133,15 @@
 			path = kingscup;
 			sourceTree = "<group>";
 		};
+		99CCD79C20CC4231000DB46A /* Pause */ = {
+			isa = PBXGroup;
+			children = (
+				99CCD79D20CC424C000DB46A /* PauseViewController.swift */,
+				99CCD79E20CC424C000DB46A /* PauseViewController.xib */,
+			);
+			path = Pause;
+			sourceTree = "<group>";
+		};
 		99CDBDC920656A2900616E3A /* QuickGuide */ = {
 			isa = PBXGroup;
 			children = (
@@ -147,8 +162,10 @@
 		99E48BF720AF39D100B3310A /* PlayGame */ = {
 			isa = PBXGroup;
 			children = (
+				99CCD79C20CC4231000DB46A /* Pause */,
 				99E48BF820AF3A3400B3310A /* PlayGameViewController.swift */,
 				99E48BFA20AF3A7400B3310A /* PlayGame.storyboard */,
+				999433E320CA662000C19F04 /* PlayingCardViewController.swift */,
 				99CC41D020C9A528002140EF /* PlayingCardCollectionViewCell.swift */,
 				99CC41D120C9A528002140EF /* PlayingCardCollectionViewCell.xib */,
 			);
@@ -228,6 +245,7 @@
 			files = (
 				99A137BC1FFE41F400C1058B /* LaunchScreen.storyboard in Resources */,
 				99CDBDCB20656A7B00616E3A /* QuickGuide.storyboard in Resources */,
+				99CCD7A020CC424C000DB46A /* PauseViewController.xib in Resources */,
 				99E48BFB20AF3A7400B3310A /* PlayGame.storyboard in Resources */,
 				99A137B91FFE41F400C1058B /* Assets.xcassets in Resources */,
 				99A137B71FFE41F400C1058B /* Main.storyboard in Resources */,
@@ -260,13 +278,17 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-kingscup/Pods-kingscup-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/DynamicBlurView/DynamicBlurView.framework",
 				"${BUILT_PRODUCTS_DIR}/Localize-Swift/Localize_Swift.framework",
+				"${BUILT_PRODUCTS_DIR}/PopupDialog/PopupDialog.framework",
 				"${BUILT_PRODUCTS_DIR}/R.swift.Library/Rswift.framework",
 				"${BUILT_PRODUCTS_DIR}/SwifterSwift/SwifterSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DynamicBlurView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Localize_Swift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PopupDialog.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Rswift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwifterSwift.framework",
 			);
@@ -300,9 +322,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99CCD79F20CC424C000DB46A /* PauseViewController.swift in Sources */,
 				99A137B41FFE41F400C1058B /* ViewController.swift in Sources */,
 				99A137B21FFE41F400C1058B /* AppDelegate.swift in Sources */,
 				99E48BF620AF38EF00B3310A /* Card.swift in Sources */,
+				999433E420CA662000C19F04 /* PlayingCardViewController.swift in Sources */,
 				99176B212000B30D003F5C4D /* R.generated.swift in Sources */,
 				99176B2A200217B3003F5C4D /* SettingsTableViewCell.swift in Sources */,
 				99CC41D220C9A528002140EF /* PlayingCardCollectionViewCell.swift in Sources */,
