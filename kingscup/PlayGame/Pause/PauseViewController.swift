@@ -9,7 +9,10 @@
 import UIKit
 
 class PauseViewController: UIViewController {
-
+    
+    var quitButtonAction: (()->Void)!
+    var replayButtonAction: (()->Void)!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -24,6 +27,10 @@ class PauseViewController: UIViewController {
         
         self.presentingViewController!.presentingViewController!.dismiss(animated: true, completion: nil)
         
+    }
+    
+    @IBAction func replayButtonTapped(_ sender: UIButton) {
+        self.replayButtonAction()
     }
     
 }

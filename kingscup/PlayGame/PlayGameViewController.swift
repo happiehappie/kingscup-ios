@@ -33,11 +33,22 @@ class PlayGameViewController: UIViewController {
             }
         }
         self.cards = self.cards.shuffled()
+        self.collectionView.reloadData()
     }
     
     @IBAction func optionsButtonTapped(_ sender: UIButton) {
         
-        let popup = PopupDialog(viewController: PauseViewController(nibName: R.nib.pauseViewController.name, bundle: nil))
+        let vc = PauseViewController(nibName: R.nib.pauseViewController.name, bundle: nil)
+        vc.quitButtonAction = {
+            self.dismiss(animated: true, completion: nil)
+        }
+        vc.replayButtonAction = {
+            self.setup()
+            vc.dismiss(animated: true, completion: nil)
+        }
+        
+        let popup = PopupDialog(viewController: vc)
+        
         self.present(popup, animated: true, completion: nil)
     }
     
