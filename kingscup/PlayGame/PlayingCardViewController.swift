@@ -35,7 +35,7 @@ class PlayingCardViewController: UIViewController {
         self.mainSuitImageView.image = self.card.suit.image
         self.topleftSuitImageView.image = self.mainSuitImageView.image
         self.topLeftRankLabel.text = self.card.rank.rawValue
-        self.bottomRightSuitImageView.image = self.mainSuitImageView.image
+        self.bottomRightSuitImageView.image = self.card.suit.darkImage
         self.bottomRightRankLabel.text = self.card.rank.rawValue
     }
     

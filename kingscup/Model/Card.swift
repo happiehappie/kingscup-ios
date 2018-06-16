@@ -49,6 +49,19 @@ class Card: NSObject {
             }
         }
         
+        var darkImage: UIImage {
+            switch self {
+            case .spade:
+                return R.image.spadeDark()!
+            case .heart:
+                return R.image.heartDark()!
+            case .club:
+                return R.image.clubDark()!
+            case .diamond:
+                return R.image.diamondDark()!
+            }
+        }
+        
     }
     
     static let width: CGFloat = 100.0

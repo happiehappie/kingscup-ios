@@ -77,7 +77,14 @@ extension PlayGameViewController: UICollectionViewDelegate, UICollectionViewData
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        self.performSegue(withIdentifier: R.segue.playGameViewController.gameCardSegue, sender: self.cards[indexPath.item])
+        DispatchQueue.main.async {
+            
+            self.performSegue(withIdentifier: R.segue.playGameViewController.gameCardSegue, sender: self.cards[indexPath.item])
+            
+            self.cards.remove(at: indexPath.item)
+            collectionView.reloadData()
+        }
+        
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {

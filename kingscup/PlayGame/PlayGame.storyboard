@@ -200,7 +200,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SpadePink" translatesAutoresizingMaskIntoConstraints="NO" id="t2H-MQ-KIc">
                                 <rect key="frame" x="-191" y="57" width="444" height="29"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Gb-l7-gcM">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Gb-l7-gcM">
                                 <rect key="frame" x="274" y="531" width="30" height="29"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="30" id="ThB-KE-cyZ"/>
