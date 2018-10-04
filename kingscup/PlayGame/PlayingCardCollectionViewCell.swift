@@ -22,8 +22,8 @@ class PlayingCardCollectionViewCell: UICollectionViewCell {
     func config(with card: Card) {
         
         self.imageView.image = R.image.logoIcon()
-        self.titleLabel.text = "KING'S CUP"
-        //self.titleLabel.text = "\(card.suit.rawValue) \(card.rank.rawValue)"
+        //self.titleLabel.text = "KING'S CUP"
+        self.titleLabel.text = "\(card.suit.rawValue) \(card.rank.rawValue)"
     }
     
 }

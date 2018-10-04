@@ -12,6 +12,7 @@ import PopupDialog
 class PlayGameViewController: UIViewController {
     
     @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var crownStackView: UIStackView!
     var cards = [Card]()
     
     override func viewDidLoad() {
@@ -22,8 +23,10 @@ class PlayGameViewController: UIViewController {
         self.setup()
     }
     
-    
     func setup() {
+        for view in self.crownStackView.arrangedSubviews {
+            view.isHidden = false
+        }
         self.cards = []
         let ranks = [Card.Rank.ace, Card.Rank.two, Card.Rank.three, Card.Rank.four, Card.Rank.five, Card.Rank.six, Card.Rank.seven, Card.Rank.eight, Card.Rank.nine, Card.Rank.ten, Card.Rank.jack, Card.Rank.queen, Card.Rank.king]
         let suits = [Card.Suit.spade, Card.Suit.heart, Card.Suit.diamond, Card.Suit.club]
@@ -55,7 +58,7 @@ class PlayGameViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == R.segue.playGameViewController.gameCardSegue.identifier {
             let vc = segue.destination as! PlayingCardViewController
-            vc.card = sender as! Card
+            vc.card = sender as? Card
         }
     }
     
@@ -78,9 +81,18 @@ extension PlayGameViewController: UICollectionViewDelegate, UICollectionViewData
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         DispatchQueue.main.async {
-            
             self.performSegue(withIdentifier: R.segue.playGameViewController.gameCardSegue, sender: self.cards[indexPath.item])
             
+            
+            if self.cards[indexPath.item].rank == Card.Rank.king {
+                for view in self.crownStackView.arrangedSubviews {
+                    if view.isHidden == false {
+                        view.isHidden = true
+                        break
+                    } 
+                }
+                
+            }
             self.cards.remove(at: indexPath.item)
             collectionView.reloadData()
         }
