@@ -95,14 +95,43 @@
                                     <outlet property="delegate" destination="60L-cT-7rB" id="SWS-KD-Ppr"/>
                                 </connections>
                             </collectionView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3IM-OH-pSu">
+                                <rect key="frame" x="0.0" y="199" width="320" height="126.5"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cup4" translatesAutoresizingMaskIntoConstraints="NO" id="KOD-JL-1Ql">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="Zp7-wN-86r"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ss4-2Q-drs">
+                                        <rect key="frame" x="0.0" y="100" width="320" height="26.5"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="KOD-JL-1Ql" firstAttribute="top" secondItem="3IM-OH-pSu" secondAttribute="top" id="L2u-Rj-iC1"/>
+                                    <constraint firstItem="ss4-2Q-drs" firstAttribute="leading" secondItem="3IM-OH-pSu" secondAttribute="leading" id="ONN-Vz-fEy"/>
+                                    <constraint firstItem="ss4-2Q-drs" firstAttribute="top" secondItem="KOD-JL-1Ql" secondAttribute="bottom" id="QkE-Oa-64c"/>
+                                    <constraint firstItem="KOD-JL-1Ql" firstAttribute="leading" secondItem="3IM-OH-pSu" secondAttribute="leading" id="ZK3-nU-lb3"/>
+                                    <constraint firstAttribute="bottom" secondItem="ss4-2Q-drs" secondAttribute="bottom" id="dxJ-tH-5iL"/>
+                                    <constraint firstAttribute="trailing" secondItem="KOD-JL-1Ql" secondAttribute="trailing" id="gd0-a2-cWd"/>
+                                    <constraint firstAttribute="trailing" secondItem="ss4-2Q-drs" secondAttribute="trailing" id="sni-9D-R6F"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" name="ColorPrimary"/>
                         <constraints>
                             <constraint firstItem="fU1-vZ-AG2" firstAttribute="centerY" secondItem="Eqv-4p-J1M" secondAttribute="centerY" id="0P3-x7-3Lz"/>
                             <constraint firstItem="Eqv-4p-J1M" firstAttribute="leading" secondItem="HZ3-QW-Jc1" secondAttribute="leading" constant="16" id="29Q-m7-yXf"/>
                             <constraint firstAttribute="trailing" secondItem="HnD-6w-Hhd" secondAttribute="trailing" id="DJD-v8-ra0"/>
+                            <constraint firstItem="3IM-OH-pSu" firstAttribute="leading" secondItem="HZ3-QW-Jc1" secondAttribute="leading" id="E6z-Cu-auk"/>
                             <constraint firstItem="HnD-6w-Hhd" firstAttribute="height" secondItem="bcb-fd-EF9" secondAttribute="height" multiplier="0.5" constant="16" id="MRQ-wW-Ayc"/>
                             <constraint firstItem="Ise-fF-Ifw" firstAttribute="width" secondItem="fU1-vZ-AG2" secondAttribute="width" multiplier="0.5" id="NCN-yp-3lw"/>
+                            <constraint firstItem="HZ3-QW-Jc1" firstAttribute="trailing" secondItem="3IM-OH-pSu" secondAttribute="trailing" id="NKP-z0-3qZ"/>
                             <constraint firstItem="Eqv-4p-J1M" firstAttribute="top" secondItem="HZ3-QW-Jc1" secondAttribute="top" constant="16" id="Qb7-HG-UJD"/>
                             <constraint firstItem="Ise-fF-Ifw" firstAttribute="height" secondItem="fU1-vZ-AG2" secondAttribute="height" multiplier="0.5" id="RD4-k2-qjL"/>
                             <constraint firstItem="bcb-fd-EF9" firstAttribute="leading" secondItem="HZ3-QW-Jc1" secondAttribute="leading" id="TPz-2Z-PO3"/>
@@ -113,6 +142,7 @@
                             <constraint firstItem="HZ3-QW-Jc1" firstAttribute="bottom" secondItem="bcb-fd-EF9" secondAttribute="bottom" constant="16" id="jj9-wn-iXR"/>
                             <constraint firstItem="HZ3-QW-Jc1" firstAttribute="bottom" secondItem="HnD-6w-Hhd" secondAttribute="bottom" id="nTJ-kw-gLt"/>
                             <constraint firstItem="Ise-fF-Ifw" firstAttribute="centerY" secondItem="fU1-vZ-AG2" secondAttribute="centerY" id="otb-ft-Gyl"/>
+                            <constraint firstItem="3IM-OH-pSu" firstAttribute="centerY" secondItem="HZ3-QW-Jc1" secondAttribute="centerY" constant="-32" id="pNJ-lb-Wpr"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="HZ3-QW-Jc1"/>
                     </view>
@@ -124,7 +154,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VOn-oM-lGX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="28" y="142"/>
+            <point key="canvasLocation" x="26.25" y="141.5492957746479"/>
         </scene>
         <!--Playing Card View Controller-->
         <scene sceneID="ddN-i1-E6i">
@@ -254,6 +284,7 @@
     <resources>
         <image name="Checked" width="56" height="56"/>
         <image name="Crown" width="332" height="169"/>
+        <image name="Cup4" width="194" height="200"/>
         <image name="Menu" width="304" height="304"/>
         <image name="SpadePink" width="889" height="889"/>
         <image name="Wallpaper" width="960" height="1707"/>
