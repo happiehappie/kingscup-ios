@@ -13,7 +13,10 @@ class PlayGameViewController: UIViewController {
     
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var crownStackView: UIStackView!
+    @IBOutlet weak var cupImageView: UIImageView!
+    @IBOutlet weak var messageLabel: UILabel!
     var cards = [Card]()
+    var tauntMessages = ["Seriously", "Coming Up", "Just One More", "This Is It", "Don\'t Think", "Drink Me", "Faster Mate", "You Sure?", "Alright Buddy?", "Come On"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,6 +24,12 @@ class PlayGameViewController: UIViewController {
         self.view.backgroundColor = UIColor.black
         self.collectionView.register(R.nib.playingCardCollectionViewCell(), forCellWithReuseIdentifier: R.reuseIdentifier.playingCardCell.identifier)
         self.setup()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.messageLabel.text = self.tauntMessages.randomElement()
+        self.cupImageView.image = UIImage(named: "Cup\(self.crownStackView.arrangedSubviews.filter{$0.isHidden == false}.count)")
     }
     
     func setup() {
@@ -35,6 +44,8 @@ class PlayGameViewController: UIViewController {
                 self.cards.append(Card(rank: rank, suit: suit))
             }
         }
+        self.cupImageView.image = UIImage(named: "Cup4")
+        self.messageLabel.text = self.tauntMessages.randomElement()
         self.cards = self.cards.shuffled()
         self.collectionView.reloadData()
     }
@@ -93,6 +104,7 @@ extension PlayGameViewController: UICollectionViewDelegate, UICollectionViewData
                 }
                 
             }
+            
             self.cards.remove(at: indexPath.item)
             collectionView.reloadData()
         }

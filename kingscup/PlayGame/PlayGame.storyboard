@@ -96,7 +96,7 @@
                                 </connections>
                             </collectionView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3IM-OH-pSu">
-                                <rect key="frame" x="0.0" y="199" width="320" height="126.5"/>
+                                <rect key="frame" x="0.0" y="195" width="320" height="134.5"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cup4" translatesAutoresizingMaskIntoConstraints="NO" id="KOD-JL-1Ql">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
@@ -105,7 +105,7 @@
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ss4-2Q-drs">
-                                        <rect key="frame" x="0.0" y="100" width="320" height="26.5"/>
+                                        <rect key="frame" x="0.0" y="108" width="320" height="26.5"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -115,7 +115,7 @@
                                 <constraints>
                                     <constraint firstItem="KOD-JL-1Ql" firstAttribute="top" secondItem="3IM-OH-pSu" secondAttribute="top" id="L2u-Rj-iC1"/>
                                     <constraint firstItem="ss4-2Q-drs" firstAttribute="leading" secondItem="3IM-OH-pSu" secondAttribute="leading" id="ONN-Vz-fEy"/>
-                                    <constraint firstItem="ss4-2Q-drs" firstAttribute="top" secondItem="KOD-JL-1Ql" secondAttribute="bottom" id="QkE-Oa-64c"/>
+                                    <constraint firstItem="ss4-2Q-drs" firstAttribute="top" secondItem="KOD-JL-1Ql" secondAttribute="bottom" constant="8" id="QkE-Oa-64c"/>
                                     <constraint firstItem="KOD-JL-1Ql" firstAttribute="leading" secondItem="3IM-OH-pSu" secondAttribute="leading" id="ZK3-nU-lb3"/>
                                     <constraint firstAttribute="bottom" secondItem="ss4-2Q-drs" secondAttribute="bottom" id="dxJ-tH-5iL"/>
                                     <constraint firstAttribute="trailing" secondItem="KOD-JL-1Ql" secondAttribute="trailing" id="gd0-a2-cWd"/>
@@ -149,6 +149,8 @@
                     <connections>
                         <outlet property="collectionView" destination="bcb-fd-EF9" id="9EY-PZ-zuC"/>
                         <outlet property="crownStackView" destination="Eqv-4p-J1M" id="dfJ-w3-sjk"/>
+                        <outlet property="cupImageView" destination="KOD-JL-1Ql" id="xxa-pZ-tY9"/>
+                        <outlet property="messageLabel" destination="ss4-2Q-drs" id="YfI-lc-CRW"/>
                         <segue destination="qEY-dW-eYP" kind="presentation" identifier="gameCardSegue" id="Mvh-qU-7Pa"/>
                     </connections>
                 </viewController>
