@@ -29,7 +29,7 @@ class PlayGameViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.messageLabel.text = self.tauntMessages.randomElement()
-        self.cupImageView.image = UIImage(named: "Cup\(self.crownStackView.arrangedSubviews.filter{$0.isHidden == false}.count)")
+        self.cupImageView.image = UIImage(named: "Cup\(self.crownStackView.arrangedSubviews.filter{$0.isHidden == false}.count)") ?? UIImage(named: "Cup1")
     }
     
     func setup() {
@@ -91,23 +91,26 @@ extension PlayGameViewController: UICollectionViewDelegate, UICollectionViewData
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        DispatchQueue.main.async {
-            self.performSegue(withIdentifier: R.segue.playGameViewController.gameCardSegue, sender: self.cards[indexPath.item])
-            
-            
-            if self.cards[indexPath.item].rank == Card.Rank.king {
-                for view in self.crownStackView.arrangedSubviews {
-                    if view.isHidden == false {
-                        view.isHidden = true
-                        break
-                    } 
+        if (self.crownStackView.arrangedSubviews.filter{$0.isHidden == false}.count) > 0 {
+            DispatchQueue.main.async {
+                self.performSegue(withIdentifier: R.segue.playGameViewController.gameCardSegue, sender: self.cards[indexPath.item])
+                
+                
+                if self.cards[indexPath.item].rank == Card.Rank.king {
+                    for view in self.crownStackView.arrangedSubviews {
+                        if view.isHidden == false {
+                            view.isHidden = true
+                            break
+                        }
+                    }
+                    
                 }
                 
+                self.cards.remove(at: indexPath.item)
+                collectionView.reloadData()
             }
-            
-            self.cards.remove(at: indexPath.item)
-            collectionView.reloadData()
         }
+        
         
     }
     
