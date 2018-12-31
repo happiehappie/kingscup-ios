@@ -18,6 +18,9 @@ class PlayGameViewController: UIViewController {
     var cards = [Card]()
     var tauntMessages = ["Seriously", "Coming Up", "Just One More", "This Is It", "Don\'t Think", "Drink Me", "Faster Mate", "You Sure?", "Alright Buddy?", "Come On"]
     
+    var headers = [String]()
+    var bodies = [String]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -44,6 +47,22 @@ class PlayGameViewController: UIViewController {
                 self.cards.append(Card(rank: rank, suit: suit))
             }
         }
+        
+        do {
+            if let bodyPath = Bundle.main.path(forResource: "Body", ofType: "txt"), let headerPath = Bundle.main.path(forResource: "Header", ofType: "txt") {
+                let bodyData = try String(contentsOfFile:bodyPath, encoding: String.Encoding.utf8)
+                self.bodies = bodyData.components(separatedBy: "\n")
+                let headerData = try String(contentsOfFile:headerPath, encoding: String.Encoding.utf8)
+                self.headers = headerData.components(separatedBy: "\n")
+                self.bodies.removeLast()
+                self.headers.removeLast()
+                print(self.headers)
+            }
+        } catch let err as NSError {
+            // do something with Error
+            print(err.localizedDescription)
+        }
+        
         self.cupImageView.image = UIImage(named: "Cup4")
         self.messageLabel.text = self.tauntMessages.randomElement()
         self.cards = self.cards.shuffled()
@@ -70,6 +89,9 @@ class PlayGameViewController: UIViewController {
         if segue.identifier == R.segue.playGameViewController.gameCardSegue.identifier {
             let vc = segue.destination as! PlayingCardViewController
             vc.card = sender as? Card
+            let randomValue = Int.random(in: 0..<self.bodies.count-1)
+            vc.headerMessage = self.headers[randomValue]
+            vc.bodyMessage = self.bodies[randomValue]
         }
     }
     

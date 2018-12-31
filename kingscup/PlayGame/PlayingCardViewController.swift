@@ -20,6 +20,8 @@ class PlayingCardViewController: UIViewController {
     @IBOutlet weak var bottomRightSuitImageView: UIImageView!
     @IBOutlet weak var bottomRightRankLabel: UILabel!
     
+    var headerMessage: String!
+    var bodyMessage: String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,6 +39,8 @@ class PlayingCardViewController: UIViewController {
         self.topLeftRankLabel.text = self.card.rank.rawValue
         self.bottomRightSuitImageView.image = self.card.suit.darkImage
         self.bottomRightRankLabel.text = self.card.rank.rawValue
+        self.titleLabel.text = self.headerMessage
+        self.subtitleLabel.text = self.bodyMessage
     }
     
     @IBAction func checkedButtonTapped(_ sender: UIButton) {

@@ -18,6 +18,8 @@
 		99A137B71FFE41F400C1058B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99A137B51FFE41F400C1058B /* Main.storyboard */; };
 		99A137B91FFE41F400C1058B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99A137B81FFE41F400C1058B /* Assets.xcassets */; };
 		99A137BC1FFE41F400C1058B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99A137BA1FFE41F400C1058B /* LaunchScreen.storyboard */; };
+		99C48D1221D77CF900225B11 /* Body.txt in Resources */ = {isa = PBXBuildFile; fileRef = 99C48D1121D77CF900225B11 /* Body.txt */; };
+		99C48D1421D77DBA00225B11 /* Header.txt in Resources */ = {isa = PBXBuildFile; fileRef = 99C48D1321D77DBA00225B11 /* Header.txt */; };
 		99CC41D220C9A528002140EF /* PlayingCardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99CC41D020C9A528002140EF /* PlayingCardCollectionViewCell.swift */; };
 		99CC41D320C9A528002140EF /* PlayingCardCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 99CC41D120C9A528002140EF /* PlayingCardCollectionViewCell.xib */; };
 		99CCD79F20CC424C000DB46A /* PauseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99CCD79D20CC424C000DB46A /* PauseViewController.swift */; };
@@ -46,6 +48,8 @@
 		99A137B81FFE41F400C1058B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		99A137BB1FFE41F400C1058B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		99A137BD1FFE41F400C1058B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		99C48D1121D77CF900225B11 /* Body.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Body.txt; sourceTree = "<group>"; };
+		99C48D1321D77DBA00225B11 /* Header.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Header.txt; sourceTree = "<group>"; };
 		99CC41D020C9A528002140EF /* PlayingCardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayingCardCollectionViewCell.swift; sourceTree = "<group>"; };
 		99CC41D120C9A528002140EF /* PlayingCardCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlayingCardCollectionViewCell.xib; sourceTree = "<group>"; };
 		99CCD79D20CC424C000DB46A /* PauseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PauseViewController.swift; sourceTree = "<group>"; };
@@ -129,6 +133,8 @@
 				99A137BA1FFE41F400C1058B /* LaunchScreen.storyboard */,
 				99176B202000B30D003F5C4D /* R.generated.swift */,
 				99A137BD1FFE41F400C1058B /* Info.plist */,
+				99C48D1121D77CF900225B11 /* Body.txt */,
+				99C48D1321D77DBA00225B11 /* Header.txt */,
 			);
 			path = kingscup;
 			sourceTree = "<group>";
@@ -247,11 +253,13 @@
 				99CDBDCB20656A7B00616E3A /* QuickGuide.storyboard in Resources */,
 				99CCD7A020CC424C000DB46A /* PauseViewController.xib in Resources */,
 				99E48BFB20AF3A7400B3310A /* PlayGame.storyboard in Resources */,
+				99C48D1221D77CF900225B11 /* Body.txt in Resources */,
 				99A137B91FFE41F400C1058B /* Assets.xcassets in Resources */,
 				99A137B71FFE41F400C1058B /* Main.storyboard in Resources */,
 				99CC41D320C9A528002140EF /* PlayingCardCollectionViewCell.xib in Resources */,
 				99176B2B200217B3003F5C4D /* SettingsTableViewCell.xib in Resources */,
 				99176B2420021280003F5C4D /* Settings.storyboard in Resources */,
+				99C48D1421D77DBA00225B11 /* Header.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
